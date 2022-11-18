@@ -31,6 +31,6 @@ class Solution {
         if (!parent.get(s).equals(s)) {
             parent.put(s, find(parent, parent.get(s)));
         }
-        return parent.get(0);
+        return parent.get(s);
     }
 }
