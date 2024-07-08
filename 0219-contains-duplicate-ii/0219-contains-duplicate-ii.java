@@ -8,9 +8,6 @@ class Solution {
                 if(Math.abs(hmap.get(nums[i]) - i) <= k) {
                     return true;
                 }
-                else {
-                    hmap.put(nums[i], i);
-                }
             }
             hmap.put(nums[i], i);
         }
