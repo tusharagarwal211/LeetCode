@@ -9,13 +9,11 @@ class Solution {
         
         char[] sArr = s.toCharArray();
         Arrays.sort(sArr);
-        String sSorted = new String(sArr);
         
         char[] tArr = t.toCharArray();
         Arrays.sort(tArr);
-        String tSorted = new String(tArr);
         
-        boolean ans = sSorted.equals(tSorted);
+        boolean ans = Arrays.equals(sArr, tArr);
         
         return ans;
     }
